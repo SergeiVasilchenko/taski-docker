@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '158.160.30.28', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '158.160.30.28', '127.0.0.1', 'huskytaski.hopto.org']
 
 
 # Application definition
