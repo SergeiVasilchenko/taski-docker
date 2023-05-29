@@ -58,6 +58,7 @@ jobs:
         python -m flake8 backend/
         cd backend/
         python manage.py test
+
   build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -192,7 +193,7 @@ jobs:
         # которые нужно выполнить на сервере,
         # с которым установлено соединение
         script: |
-          cd taski-docker
+          cd Taski
           # Выполняет pull образов с DockerHub
           sudo docker compose -f docker-compose.production.yml pull
           # Перезапускает все контейнеры в docker compose
